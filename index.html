@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>RGB Game</title>
+    <link rel="stylesheet" href="rgbGame.css">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div>
+        <img src="RGB Wheel.png" alt="RBG Template Left" id="leftIcon">
+        <img src="RGB model.svg" alt="RBG Template Right" id="rightIcon">
+        <!--the span text here will be white because it is in a h1, which is white, so it inherit the color  -->
+        <h1>
+            The Great
+            <br>
+            <span id="colorDisplay">RGB</span>
+            <br>
+            Color Guessing Game
+        </h1>
+    </div>
+
+
+    <div id="stripe">
+        <button id="reset">New Colors</button>
+        <span id="message"></span>
+        <button class="mode">Easy</button>
+        <button class="mode" class="selected">Hard</button>
+    </div>
+
+    <div id="container">
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+    </div>
+
+    <script src="rgbGame.js"></script>
+</body>
+
+</html>
